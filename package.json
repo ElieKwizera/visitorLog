@@ -1,0 +1,29 @@
+{
+  "name": "amalitechvisitorlog",
+  "version": "1.0.0",
+  "description": "Visitor log management system ",
+  "main": "app.js ",
+  "type": "module",
+  "scripts": {
+    "test": "yarn test",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ElieKwizera/visitorLog.git"
+  },
+  "author": "Gildas",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ElieKwizera/visitorLog/issues"
+  },
+  "homepage": "https://github.com/ElieKwizera/visitorLog#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.3.5",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.16"
+  }
+}
