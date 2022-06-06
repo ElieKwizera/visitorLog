@@ -1,6 +1,7 @@
 import mongoose from "mongoose";
+const { Schema } = mongoose;
 
-const BookingSchema = mongoose.Schema({
+const BookingSchema = new Schema({
     firstName : {
         type : String,
         required : [true, "Please enter the first name"]
@@ -18,7 +19,13 @@ const BookingSchema = mongoose.Schema({
     },
     host : {
         type : String
+    },
+    status : {
+        type : String,
+        enum: ["PENDING", "CHECKED_IN","CHECKED_OUT", "CANCELLED"],
+        default: "PENDING"
     }
+
 });
 
 const Booking  = mongoose.model("Booking", BookingSchema);
